@@ -18,6 +18,16 @@
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{tkz-euclide} % loads  TikZ and tkz-base
 \usepackage{listings}
+\def\inputGnumericTable{}
+\usepackage[latin1]{inputenc}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
 %
 %\usepackage{setspace}
 %\usepackage{gensymb}
@@ -305,8 +315,16 @@ One card is drawn from a well-shuffled deck of 52 cards. Find the probability of
 
 
 Solution:
+
+\begin{table}[h]
+	\input{code/Table}
+	
+	\caption{Events for which probability is to be found}
+	\label{Table 1}
+\end{table}
+
 \begin{enumerate}
-\item Probability of drawing a King of Red colour
+\item Probability of drawing a King of Red colour:
 
 Since there are two Suits of colour Red and each Suit has a King each,
 
@@ -318,7 +336,7 @@ Total No. of cards in a deck = 52 = $N$
 \pr{Red\;King} = \frac{K_r}{N} = \frac{2}{52} = \frac{1}{26}
 \end{align}
 
-\item Probability of drawing a Face Card
+\item Probability of drawing a Face Card:
 
 Since each suit has 3 face cards and there are 4 suits,
 
@@ -328,7 +346,7 @@ No. of Face Cards = $3 \times 4$ = 12 = $F$
 \pr{Face\;Card} = \frac{F}{N} = \frac{12}{52} = \frac{3}{13}
 \end{align}
 
-\item Probability of drawing a Red Face Card
+\item Probability of drawing a Red Face Card:
 
 As there are only two red suits,
 
@@ -338,14 +356,14 @@ No. of Red Face Cards = $2 \times 3$ = 6 = $R_f$
 \pr{Red\;Face\;Card} = \frac{R_f}{N} = \frac{6}{52} = \frac{3}{26}
 \end{align}
 
-\item Probability of drawing the Jack of Hearts
+\item Probability of drawing the Jack of Hearts:
 
 No. of Jack of Hearts = 1 = $J_h$
 \begin{align}
 \pr{Jack\;of\;Hearts} = \frac{J_h}{N} = \frac{1}{52}
 \end{align}
 
-\item Probability of drawing a spade
+\item Probability of drawing a spade:
 
 No. of spades = 13 = $s$
 
@@ -353,7 +371,7 @@ No. of spades = 13 = $s$
 \pr{Spade} = \frac{s}{N} = \frac{13}{52} = \frac{1}{4}
 \end{align}
 
-\item Probability of drawing the Queen of Diamonds
+\item Probability of drawing the Queen of Diamonds:
 
 No. of Queen of Diamonds = 1 = $Q_d$
 \begin{align}
