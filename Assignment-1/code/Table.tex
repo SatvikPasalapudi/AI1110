@@ -128,8 +128,9 @@
 	53pt+%
 	53pt+%
 	53pt+%
+	53pt+%
 0pt}
-\def\gumericNumCols{5}
+\def\gumericNumCols{6}
 \setlength\gnumericTableWidthComplete{\gnumericTableWidth+%
          \tabcolsep*\gumericNumCols*2+\arrayrulewidth*\gumericNumCols}
 \ifthenelse{\lengthtest{\gnumericTableWidthComplete > \linewidth}}%
@@ -152,6 +153,7 @@
 \ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColD}}{\newlength{\gnumericColD}}{}\settowidth{\gnumericColD}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 \ifthenelse{\isundefined{\gnumericColE}}{\newlength{\gnumericColE}}{}\settowidth{\gnumericColE}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColF}}{\newlength{\gnumericColF}}{}\settowidth{\gnumericColF}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
 
 \begin{tabular}[c]{%
 	b{\gnumericColA}%
@@ -159,6 +161,7 @@
 	b{\gnumericColC}%
 	b{\gnumericColD}%
 	b{\gnumericColE}%
+	b{\gnumericColF}%
 	}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -169,105 +172,121 @@
 %%  the first, last or every page. Use \multicolumn if you want.    %%
 
 %%  Header for the first page.                                      %%
-%	\multicolumn{5}{c}{The First Header} \\ \hline 
+%	\multicolumn{6}{c}{The First Header} \\ \hline 
 %	\multicolumn{1}{c}{colTag}	%Column 1
 %	&\multicolumn{1}{c}{colTag}	%Column 2
 %	&\multicolumn{1}{c}{colTag}	%Column 3
 %	&\multicolumn{1}{c}{colTag}	%Column 4
+%	&\multicolumn{1}{c}{colTag}	%Column 5
 %	&\multicolumn{1}{c}{colTag}	\\ \hline %Last column
 %	\endfirsthead
 
 %%  The running header definition.                                  %%
 %	\hline
-%	\multicolumn{5}{l}{\ldots\small\slshape continued} \\ \hline
+%	\multicolumn{6}{l}{\ldots\small\slshape continued} \\ \hline
 %	\multicolumn{1}{c}{colTag}	%Column 1
 %	&\multicolumn{1}{c}{colTag}	%Column 2
 %	&\multicolumn{1}{c}{colTag}	%Column 3
 %	&\multicolumn{1}{c}{colTag}	%Column 4
+%	&\multicolumn{1}{c}{colTag}	%Column 5
 %	&\multicolumn{1}{c}{colTag}	\\ \hline %Last column
 %	\endhead
 
 %%  The running footer definition.                                  %%
 %	\hline
-%	\multicolumn{5}{r}{\small\slshape continued\ldots} \\
+%	\multicolumn{6}{r}{\small\slshape continued\ldots} \\
 %	\endfoot
 
 %%  The ending footer definition.                                   %%
-%	\multicolumn{5}{c}{That's all folks} \\ \hline 
+%	\multicolumn{6}{c}{That's all folks} \\ \hline 
 %	\endlastfoot
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\hhline{|-|----}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{}
-	&\multicolumn{4}{p{	\gnumericColB+%
+\hhline{|----|--}
+	 \multicolumn{4}{|p{	\gnumericColA+%
+	\gnumericColB+%
 	\gnumericColC+%
 	\gnumericColD+%
-	\gnumericColE+%
 	\tabcolsep*2*3}|}%
 	{\gnumericPB{\centering}\gnumbox{Event}}
+	&\multicolumn{2}{p{	\gnumericColE+%
+	\gnumericColF+%
+	\tabcolsep*2*1}|}%
+	{\gnumericPB{\centering}\gnumbox{Value of X}}
 \\
-\hhline{|-----|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{1)}}
-	&\multicolumn{4}{p{	\gnumericColB+%
+\hhline{|------|}
+	 \multicolumn{4}{|p{	\gnumericColA+%
+	\gnumericColB+%
 	\gnumericColC+%
 	\gnumericColD+%
-	\gnumericColE+%
 	\tabcolsep*2*3}|}%
-	{\gnumericPB{\centering}\gnumbox{Draw a King of Red Colour}}
+	{\gnumericPB{\centering}\gnumbox{Drawing a King of Colour Red}}
+	&\multicolumn{2}{p{	\gnumericColE+%
+	\gnumericColF+%
+	\tabcolsep*2*1}|}%
+	{\gnumericPB{\centering}\gnumbox{1}}
 \\
-\hhline{|-----|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{2)}}
-	&\multicolumn{4}{p{	\gnumericColB+%
+\hhline{|------|}
+	 \multicolumn{4}{|p{	\gnumericColA+%
+	\gnumericColB+%
 	\gnumericColC+%
 	\gnumericColD+%
-	\gnumericColE+%
 	\tabcolsep*2*3}|}%
-	{\gnumericPB{\centering}\gnumbox{Draw a Face Card}}
+	{\gnumericPB{\centering}\gnumbox{Drawing a Face Card}}
+	&\multicolumn{2}{p{	\gnumericColE+%
+	\gnumericColF+%
+	\tabcolsep*2*1}|}%
+	{\gnumericPB{\centering}\gnumbox{2}}
 \\
-\hhline{|-----|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{3)}}
-	&\multicolumn{4}{p{	\gnumericColB+%
+\hhline{|------|}
+	 \multicolumn{4}{|p{	\gnumericColA+%
+	\gnumericColB+%
 	\gnumericColC+%
 	\gnumericColD+%
-	\gnumericColE+%
 	\tabcolsep*2*3}|}%
-	{\gnumericPB{\centering}\gnumbox{Draw a Red Face Card}}
+	{\gnumericPB{\centering}\gnumbox{Drawing a Red coloured Face Card}}
+	&\multicolumn{2}{p{	\gnumericColE+%
+	\gnumericColF+%
+	\tabcolsep*2*1}|}%
+	{\gnumericPB{\centering}\gnumbox{3}}
 \\
-\hhline{|-----|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{4)}}
-	&\multicolumn{4}{p{	\gnumericColB+%
+\hhline{|------|}
+	 \multicolumn{4}{|p{	\gnumericColA+%
+	\gnumericColB+%
 	\gnumericColC+%
 	\gnumericColD+%
-	\gnumericColE+%
 	\tabcolsep*2*3}|}%
-	{\gnumericPB{\centering}\gnumbox{Draw the Jack of Hearts}}
+	{\gnumericPB{\centering}\gnumbox{Drawing the Jack of Hearts}}
+	&\multicolumn{2}{p{	\gnumericColE+%
+	\gnumericColF+%
+	\tabcolsep*2*1}|}%
+	{\gnumericPB{\centering}\gnumbox{4}}
 \\
-\hhline{|-----|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{5)}}
-	&\multicolumn{4}{p{	\gnumericColB+%
+\hhline{|------|}
+	 \multicolumn{4}{|p{	\gnumericColA+%
+	\gnumericColB+%
 	\gnumericColC+%
 	\gnumericColD+%
-	\gnumericColE+%
 	\tabcolsep*2*3}|}%
-	{\gnumericPB{\centering}\gnumbox{Draw a Spade}}
+	{\gnumericPB{\centering}\gnumbox{Drawing a Spade}}
+	&\multicolumn{2}{p{	\gnumericColE+%
+	\gnumericColF+%
+	\tabcolsep*2*1}|}%
+	{\gnumericPB{\centering}\gnumbox{5}}
 \\
-\hhline{|-----|}
-	 \multicolumn{1}{|p{\gnumericColA}|}%
-	{\gnumericPB{\centering}\gnumbox{6)}}
-	&\multicolumn{4}{p{	\gnumericColB+%
+\hhline{|------|}
+	 \multicolumn{4}{|p{	\gnumericColA+%
+	\gnumericColB+%
 	\gnumericColC+%
 	\gnumericColD+%
-	\gnumericColE+%
 	\tabcolsep*2*3}|}%
-	{\gnumericPB{\centering}\gnumbox{Draw the Queen of Diamonds}}
+	{\gnumericPB{\centering}\gnumbox{Drawing the Queen of Diamonds}}
+	&\multicolumn{2}{p{	\gnumericColE+%
+	\gnumericColF+%
+	\tabcolsep*2*1}|}%
+	{\gnumericPB{\centering}\gnumbox{6}}
 \\
-\hhline{|-|----|}
+\hhline{|----|--|}
 \end{tabular}
 
 \ifthenelse{\isundefined{\languageshorthands}}{}{\languageshorthands{\languagename}}
