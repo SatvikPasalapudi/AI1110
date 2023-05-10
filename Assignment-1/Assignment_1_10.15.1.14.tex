@@ -316,76 +316,80 @@ One card is drawn from a well-shuffled deck of 52 cards. Find the probability of
 
 Solution:
 
-Consider a random variable $X$, which represents the event chosen.
- 
-\begin{table}[h]
-	\input{code/Table}
-	
-	\caption{Events for which probability is to be found}
-	\label{Table 1}
-\end{table}
+Consider 3 random variables $X$, $Y$ and $Z$, which represent the Colour, Class and Value of each card respectively.
 
-\begin{enumerate}
-\item Probability of drawing a King of Red colour (or) X=1:
-
-No. of Red Kings = 2 = $K_r$
-
-Total No. of cards in a deck = 52 = $N$
-
+The value of each random variable is,
 \begin{align}
-\pr{X=1} = \frac{K_r}{N} = \frac{2}{52} = \frac{1}{26}
-\end{align}
-
-\item Probability of drawing a Face Card (or) $X=2$:
-
-No. of Face Cards = $3 \times 4$ = 12 = $F$
-
-\begin{align}
-\pr{X=2} = \frac{F}{N} = \frac{12}{52} = \frac{3}{13}
-\end{align}
-
-\item Probability of drawing a Red Face Card (or) $X=3$:
-
-No. of Red Face Cards = $2 \times 3$ = 6 = $R_f$
-
-\begin{align}
-\pr{X=3} = \frac{R_f}{N} = \frac{6}{52} = \frac{3}{26}
-\end{align}
-
-\item Probability of drawing the Jack of Hearts (or) $X=4$:
-
-No. of Jack of Hearts = 1 = $J_h$
-\begin{align}
-\pr{X=4} = \frac{J_h}{N} = \frac{1}{52}
-\end{align}
-
-\item Probability of drawing a Spade (or) $X=5$:
-
-No. of spades = 13 = $s$
-
-\begin{align}
-\pr{X=5} = \frac{s}{N} = \frac{13}{52} = \frac{1}{4}
-\end{align}
-
-\item Probability of drawing the Queen of Diamonds (or) $X=6$:
-
-No. of Queen of Diamonds = 1 = $Q_d$
-\begin{align}
-\pr{X=6} = \frac{Q_d}{N} =  \frac{1}{52}
-\end{align}
-\end{enumerate}
-
-The pmf of X is,
-
-\begin{align}
-        \pr{X=i} = 
+        X = 
         \begin{cases}
-            \frac{1}{26} & i=1\\
-            \frac{3}{13} & i=2\\
-            \frac{3}{26} & i=3\\
-            \frac{1}{52} & i=4\\
-            \frac{1}{4}  & i=5\\
-            \frac{1}{52} & i=6
+            0 & Black\\
+            1 & Red
+        \end{cases}
+       \\ Y = 
+        \begin{cases}
+            1 & Diamond\\
+            2 & Heart\\
+            3 & Jack\\
+            4 & spade
+        \end{cases}
+        \\ Z = 
+        \begin{cases}
+            1 & Ace\\
+            i & i \in [2,10]\\
+            11 & Jack\\
+            12 & Queen\\
+            13 & King
         \end{cases}
 \end{align}
+Also the pmfs of each random variable are:
+\begin{align}
+\pr{X=i} = \frac{1}{2} \; \forall \;  i \in [0,1]
+\\ \pr{Y=i} = \frac{1}{4} \; \forall \; i \in [1,4]
+\\ \pr{Z=i} = \frac{1}{13} \; \forall \; i \in [1,13]
+\end{align}
+
+Also, the random variable pairs X,Z and Y,Z are independent.
+\begin{table}[h]
+	\input{code/Table}
+	\caption{Values of X,Y,Z for each event}
+	\label{Table 1}
+\end{table}
+\begin{enumerate}
+\item Probability of drawing a King of Red colour:
+\begin{align}
+\pr{Red\;King} &= \pr{X=1,Z=13}\nonumber
+\\&= \pr{X=1} \times \pr{Z=13}\nonumber
+\\&= \frac{1}{2} \times \frac{1}{13} = \frac{1}{26}
+\end{align}
+\item Probability of drawing a Face Card:
+\begin{align}
+\pr{Face\;Card} &= \pr{Z=11,12,13}\nonumber
+\\&= \sum_{i=11}^{13}\pr{Z=i}\nonumber
+\\&= 3 \times \frac{1}{13} = \frac{3}{13}
+\end{align}
+\item Probability of drawing a Red Face Card:
+\begin{align}
+\pr{Red\;Face\;Card} &= \pr{X=1, Z=11,12,13}\nonumber
+\\&= \sum_{i=11}^{13}\pr{Z=i} \times \pr{X=1}\nonumber
+\\&= \frac{1}{2} (3 \times \frac{1}{13}) = \frac{3}{26}
+\end{align}
+\item Probability of drawing the Jack of Hearts:
+\begin{align}
+\pr{Jack\;of\;Hearts} &= \pr{Y=3, Z=11}\nonumber
+\\&= \pr{Y=3} \times \pr{Z=11}\nonumber 
+\\&= \frac{1}{4} \times \frac{1}{13} = \frac{1}{52}
+\end{align}
+\item Probability of drawing a Spade:
+\begin{align}
+\pr{spade} &= \pr{Y=4}\nonumber
+\\&= \frac{1}{4}
+\end{align}
+
+\item Probability of drawing the Queen of Diamonds:
+\begin{align}
+\pr{Queen\;of\;Diamonds} &= \pr{Y=1, Z=12}\nonumber
+\\&= \pr{Y=1} \times \pr{Z=12}\nonumber 
+\\&= \frac{1}{4} \times \frac{1}{13} = \frac{1}{52}
+\end{align}
+\end{enumerate}
 \end{document}
