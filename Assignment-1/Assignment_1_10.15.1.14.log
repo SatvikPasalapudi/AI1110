@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  12 MAY 2023 09:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  12 MAY 2023 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1225,31 +1225,31 @@ LaTeX Info: Redefining \nameref on input line 110.
 \c@example=\count349
 \c@rem=\count350
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 3
-19.
+24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 3
-19.
+24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 3
-19.
+24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 3
-19.
+24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for TS1+txr on input line 3
-19.
+24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
@@ -1268,17 +1268,22 @@ File: ts1txr.fd 2000/12/15 v3.1
 \gnumericColI=\skip84
 \gnumericColJ=\skip85
 )
-Overfull \hbox (13.49628pt too wide) detected at line 362
+Overfull \hbox (13.49628pt too wide) detected at line 344
 []
  []
 
 
-Overfull \hbox (56.70818pt too wide) detected at line 372
+Overfull \hbox (56.70818pt too wide) detected at line 354
 []
  []
 
 
-Overfull \hbox (12.36832pt too wide) detected at line 377
+Overfull \hbox (12.36832pt too wide) detected at line 359
+[]
+ []
+
+
+Overfull \hbox (12.36832pt too wide) detected at line 369
 []
  []
 
@@ -1290,25 +1295,22 @@ Overfull \vbox (5.35199pt too high) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (12.36832pt too wide) detected at line 387
-[]
- []
+(./Assignment_1_10.15.1.14.aux)
 
-[2
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-] (./Assignment_1_10.15.1.14.aux)
 Package rerunfilecheck Info: File `Assignment_1_10.15.1.14.out' has not changed
 .
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29459 strings out of 478287
- 581027 string characters out of 5849289
- 872182 words of memory out of 5000000
+ 29461 strings out of 478287
+ 581021 string characters out of 5849289
+ 874182 words of memory out of 5000000
  47005 multiletter control sequences out of 15000+600000
  535526 words of font info for 166 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,13n,96p,515b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,12n,96p,515b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1316,10 +1318,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Assignment_1_10.15.1.14.pdf (2 pages, 48645 bytes).
+Output written on Assignment_1_10.15.1.14.pdf (1 page, 40871 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 78 PDF objects out of 1000 (max. 8388607)
  60 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 500000)
+ 24 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
