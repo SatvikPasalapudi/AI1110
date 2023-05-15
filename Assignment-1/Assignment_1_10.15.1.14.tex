@@ -309,7 +309,6 @@ Question:
 
 One card is drawn from a well-shuffled deck of 52 cards. Find the probability of getting
 \begin{enumerate}
-
 \item A king of red colour 
 \item A face card 
 \item A red face card
@@ -329,13 +328,17 @@ The pmfs of each random variable are:
 \\ \pr{Y=i} = \frac{1}{4} \; \forall \; i \in [1,4]
 \\ \pr{Z=i} = \frac{1}{13} \; \forall \; i \in [1,13]
 \end{align}
-
+The cdf of Z is defined by,
+\begin{align}
+F_Z(z)=\sum_{i=1}^{z} \pr{Z=i} = z \times \pr{Z=i} = \frac{z}{13}
+\end{align}
 Also, the random variable pairs X,Z and Y,Z are independent.
 \begin{table}[h]
 	\input{code/Table}
 	\caption{Values of X,Y,Z for each event}
 	\label{Table 1}
 \end{table}
+
 \begin{enumerate}
 \item Probability of drawing a King of Red colour:
 \begin{align}
