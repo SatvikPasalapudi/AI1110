@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  10 MAY 2023 22:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  15 MAY 2023 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -107,7 +107,7 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count269
 \l__pdf_internal_box=\box57
 )
-No file Table.aux.
+(./Table.aux)
 \openout1 = `Table.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
@@ -124,6 +124,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
 LaTeX Font Info:    ... okay on input line 68.
+
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count270
@@ -166,16 +167,16 @@ Overfull \hbox (15.62813pt too wide) in paragraph at lines 166--367
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Table.aux) ) 
 Here is how much of TeX's memory you used:
- 1508 strings out of 478287
- 24531 string characters out of 5849289
- 323748 words of memory out of 5000000
+ 1510 strings out of 478287
+ 24551 string characters out of 5849289
+ 323739 words of memory out of 5000000
  19735 multiletter control sequences out of 15000+600000
  471995 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,9n,47p,202b,142s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Table.pdf (1 page, 17386 bytes).
+Output written on Table.pdf (1 page, 18019 bytes).
 PDF statistics:
  13 PDF objects out of 1000 (max. 8388607)
  7 compressed objects within 1 object stream
