@@ -324,13 +324,14 @@ Consider 3 random variables $X$, $Y$ and $Z$, which represent the Colour, Class 
 
 The pmfs of each random variable are:
 \begin{align}
-\pr{X=i} = \frac{1}{2} \; \forall \;  i \in [0,1]
-\\ \pr{Y=i} = \frac{1}{4} \; \forall \; i \in [1,4]
-\\ \pr{Z=i} = \frac{1}{13} \; \forall \; i \in [1,13]
+P_X(i) = \frac{1}{2} \; \forall \;  i \in [0,1]
+\\ P_Y(i) = \frac{1}{4} \; \forall \; i \in [1,4]
+\\ P_Z(i) = \frac{1}{13} \; \forall \; i \in [1,13]
 \end{align}
 The cdf of Z is defined by,
 \begin{align}
-F_Z(z)=\sum_{i=1}^{z} \pr{Z=i} = z \times \pr{Z=i} = \frac{z}{13}
+F_Z(z)&=\pr{Z \le z}=\sum_{i=1}^{z} \pr{Z=i}\nonumber
+\\ &= z \times \pr{Z=1} = \frac{z}{13}  \label{cdf}
 \end{align}
 Also, the random variable pairs X,Z and Y,Z are independent.
 \begin{table}[h]
@@ -347,12 +348,12 @@ Also, the random variable pairs X,Z and Y,Z are independent.
 \end{align}
 \item Probability of drawing a Face Card:
 \begin{align}
-\pr{Z=1,2,3} = F_Z(3) = \frac{3}{13}
+\pr{Z=1,2,3} = F_Z(3) = \frac{3}{13} (From \eqref{cdf})
 \end{align}
 \item Probability of drawing a Red Face Card:
 \begin{align}
 \pr{X=1, Z=1,2,3} &= \pr{X=1} \times F_Z(3)\nonumber
-\\&= \frac{1}{2} \times \frac{3}{13} = \frac{3}{26}
+\\&= \frac{1}{2} \times \frac{3}{13} = \frac{3}{26} (From \eqref{cdf})
 \end{align}
 \item Probability of drawing the Jack of Hearts:
 \begin{align}
