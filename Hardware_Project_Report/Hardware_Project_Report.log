@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  18 MAY 2023 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  19 MAY 2023 00:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1274,11 +1274,16 @@ File: ./Images/Output4.jpeg Graphic file (type jpg)
 <use ./Images/Output4.jpeg>
 Package pdftex.def Info: ./Images/Output4.jpeg  used on input line 355.
 (pdftex.def)             Requested size: 85.35284pt x 113.80379pt.
-<./Images/Block_Diagram.jpeg, id=11, 1081.03876pt x 837.1275pt>
+<./Images/Block_Diagram.jpeg, id=11, 1043.9pt x 843.15pt>
 File: ./Images/Block_Diagram.jpeg Graphic file (type jpg)
 <use ./Images/Block_Diagram.jpeg>
 Package pdftex.def Info: ./Images/Block_Diagram.jpeg  used on input line 360.
-(pdftex.def)             Requested size: 199.16428pt x 170.70532pt.
+(pdftex.def)             Requested size: 256.06834pt x 256.07324pt.
+
+Overfull \hbox (27.19084pt too wide) in paragraph at lines 360--362
+ [][] 
+ []
+
 
 Overfull \vbox (5.35199pt too high) has occurred while \output is active []
 
@@ -1295,8 +1300,8 @@ Package rerunfilecheck Info: File `Hardware_Project_Report.out' has not changed
  ) 
 Here is how much of TeX's memory you used:
  29491 strings out of 478287
- 582425 string characters out of 5849289
- 838151 words of memory out of 5000000
+ 582430 string characters out of 5849289
+ 838129 words of memory out of 5000000
  47037 multiletter control sequences out of 15000+600000
  529718 words of font info for 146 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1307,7 +1312,7 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Hardware_Project_Report.pdf (2 pages, 382278 bytes).
+Output written on Hardware_Project_Report.pdf (2 pages, 370807 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
