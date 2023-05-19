@@ -331,11 +331,11 @@ p_X(i) = \frac{1}{2} \; \forall \;  i \in [0,1]
 The cdf of Z is defined by,
 \begin{align}
 F_Z(z)&=\pr{Z \le z}=\sum_{i=1}^{z} \pr{Z=i}\nonumber
-\\ &= z \times \pr{Z=1} = \frac{z}{13}  \label{cdf}
+\\ &= z \times \pr{Z=1} = \frac{z}{13}  \label{eq:cdf}
 \end{align}
 Also, the random variable pairs X,Z and Y,Z are independent.
 \begin{table}[h]
-	\input{Tables/Table}
+	\input{tables/Table}
 	\caption{Values of X,Y,Z for each event}
 	\label{tab:Table 1}
 \end{table}
@@ -348,12 +348,12 @@ Also, the random variable pairs X,Z and Y,Z are independent.
 \end{align}
 \item Probability of drawing a Face Card:
 \begin{align}
-\pr{1 \le Z \le 3} = F_Z(3) = \frac{3}{13} (From \eqref{cdf})
+\pr{1 \le Z \le 3} = F_Z(3) = \frac{3}{13} (From \eqref{eq:cdf})
 \end{align}
 \item Probability of drawing a Red Face Card:
 \begin{align}
 \pr{X=1, 1 \le Z \le 3} &= \pr{X=1} \times F_Z(3)\nonumber
-\\&= \frac{1}{2} \times \frac{3}{13} = \frac{3}{26} (From \eqref{cdf})
+\\&= \frac{1}{2} \times \frac{3}{13} = \frac{3}{26} (From \eqref{eq:cdf})
 \end{align}
 \item Probability of drawing the Jack of Hearts:
 \begin{align}

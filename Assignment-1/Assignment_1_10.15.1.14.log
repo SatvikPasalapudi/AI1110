@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  19 MAY 2023 00:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.4.24)  19 MAY 2023 09:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1253,7 +1253,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 3
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) (./Tables/Table.tex
+) (./tables/Table.tex
 \gnumericTableWidth=\skip73
 \gnumericTableWidthComplete=\skip74
 \gnumericMultiRowLength=\skip75
@@ -1296,8 +1296,8 @@ Package rerunfilecheck Info: File `Assignment_1_10.15.1.14.out' has not changed
  ) 
 Here is how much of TeX's memory you used:
  29463 strings out of 478287
- 581055 string characters out of 5849289
- 874206 words of memory out of 5000000
+ 581058 string characters out of 5849289
+ 874208 words of memory out of 5000000
  47006 multiletter control sequences out of 15000+600000
  535526 words of font info for 166 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
